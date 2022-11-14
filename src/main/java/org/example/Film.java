@@ -5,9 +5,9 @@ import java.time.LocalDate;
 public class Film {
 
     int number;
-    private String name;
-    private LocalDate dateOfProduction;
-    private FilmType type = FilmType.ОБЫЧНЫЙ;
+    private final String name;
+    private final LocalDate dateOfProduction;
+    private FilmType type;
 
     public Film(int number, String name, LocalDate dateOfProduction, FilmType type) {
         this.number = number;
@@ -15,7 +15,6 @@ public class Film {
         this.dateOfProduction = dateOfProduction;
         this.type = type;
     }
-
 
     @Override
     public String toString() {
