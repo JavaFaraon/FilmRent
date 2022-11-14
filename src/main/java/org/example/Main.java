@@ -24,9 +24,7 @@ public class Main {
             LocalDate newPeriod = film.getDateOfProduction().plusMonths(3);// устанавливаем период новизны фильма 3 месяца
             if ( newPeriod.isAfter(LocalDate.now())) {
                 film.setType(НОВЫЙ);
-                //System.out.println("новый");
             }
-            else System.out.println("не новый");
         }
 
         System.out.println("Выберите номер фильма из списка:");
